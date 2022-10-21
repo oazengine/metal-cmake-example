@@ -1,0 +1,3 @@
+/Users/noma/Desktop/dev/cmakemetal/build/CMakeFiles/cmakemetal.dir
+/Users/noma/Desktop/dev/cmakemetal/build/CMakeFiles/edit_cache.dir
+/Users/noma/Desktop/dev/cmakemetal/build/CMakeFiles/rebuild_cache.dir
