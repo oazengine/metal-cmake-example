@@ -1,13 +1,4 @@
 "/Users/noma/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=/Users/noma/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/ninja/mac/ninja" -G Ninja -S /Users/noma/Desktop/dev/cmakemetal -B /Users/noma/Desktop/dev/cmakemetal/cmake-build-debug
 -- Configuring done
-CMake Error at CMakeLists.txt:13 (add_executable):
-  Cannot find source file:
-
-    /Users/noma/Desktop/dev/cmakemetal/renderer.cpp
-
-
-CMake Error at CMakeLists.txt:13 (add_executable):
-  No SOURCES given to target: cmakemetal
-
-
-CMake Generate step failed.  Build files cannot be regenerated correctly.
+-- Generating done
+-- Build files have been written to: /Users/noma/Desktop/dev/cmakemetal/cmake-build-debug

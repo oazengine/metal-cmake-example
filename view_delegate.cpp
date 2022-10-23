@@ -13,10 +13,7 @@ MyMTKViewDelegate::~MyMTKViewDelegate()
     delete _pRenderer;
 }
 
-
-
 void MyMTKViewDelegate::drawInMTKView( MTK::View* pView )
 {
-    std::cout << "draw 2" << std::endl;
     _pRenderer->draw( pView );
 }

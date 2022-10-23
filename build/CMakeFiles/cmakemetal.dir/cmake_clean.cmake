@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/cmakemetal.dir/main.cpp.o.d"
   "CMakeFiles/cmakemetal.dir/renderer.cpp.o"
   "CMakeFiles/cmakemetal.dir/renderer.cpp.o.d"
+  "CMakeFiles/cmakemetal.dir/test.cpp.o"
+  "CMakeFiles/cmakemetal.dir/test.cpp.o.d"
   "CMakeFiles/cmakemetal.dir/view_delegate.cpp.o"
   "CMakeFiles/cmakemetal.dir/view_delegate.cpp.o.d"
   "cmakemetal.app/Contents/MacOS/cmakemetal"

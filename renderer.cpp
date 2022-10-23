@@ -1,6 +1,7 @@
 #include "renderer.h"
 
 #include <simd/simd.h>
+#include "test.h"
 
 
 Renderer::Renderer( MTL::Device* pDevice )
@@ -122,7 +123,7 @@ void Renderer::buildBuffers()
 
 void Renderer::draw( MTK::View* pView )
 {
-    std::cout << "draw" << std::endl;
+    printHi();
 
 
     NS::AutoreleasePool* pPool = NS::AutoreleasePool::alloc()->init();
