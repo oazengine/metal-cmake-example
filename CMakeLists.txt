@@ -10,13 +10,16 @@ find_library(Foundation Foundation)
 
 set(CUR_TARGET cmakemetal)
 
-# macos에서 동
-add_executable(${CUR_TARGET} MACOSX_BUNDLE ${CMAKE_CURRENT_SOURCE_DIR}/main.cpp
+# macos에서 동작하기 위해선 Bundle의 형태로 빌드해야 합니다. 이때 MACOSX_BUNDLE 키워드를 이용할 수 있습니다.
+add_executable(${CUR_TARGET} MACOSX_BUNDLE
+        ${CMAKE_CURRENT_SOURCE_DIR}/main.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/renderer.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/view_delegate.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/app_delegate.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/test.cpp
         )
 
+# Bundle의 properties를 설정합니다.
 set_target_properties(${CUR_TARGET} PROPERTIES
         BUNDLE True
         MACOSX_BUNDLE_GUI_IDENTIFIER my.domain.style.identifier.${CUR_TARGET}
@@ -26,7 +29,8 @@ set_target_properties(${CUR_TARGET} PROPERTIES
         MACOSX_BUNDLE_INFO_PLIST ${CMAKE_SOURCE_DIR}/MacOSXBundleInfo.plist.in
         )
 
-target_include_directories(${CUR_TARGET} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/src
+target_include_directories(${CUR_TARGET} PRIVATE
+        ${CMAKE_CURRENT_SOURCE_DIR}/src
         ${CMAKE_CURRENT_SOURCE_DIR}/dependencies/metal-cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/dependencies/metal-cpp-extensions
         )
